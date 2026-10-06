@@ -6,7 +6,7 @@ public:
         for(auto x:s){
             if(x=='(') st.push(x);
             else if(x==')'){
-                if(!st.empty() && st.top()=='(')st.pop();
+                if(!st.empty())st.pop();
                 else count++;
             }
         }
